@@ -204,7 +204,6 @@ color: var(--btn-text-color);
 }
 .filter{
     display: flex;
-    margin-top: 94px;
     margin-bottom: 34px;
     justify-content: center;
 }
@@ -237,7 +236,8 @@ color: var(--btn-text-color);
     background-color: var(--accent-text-color);
 }
 .section{
-    padding-bottom: 94px;;
+    padding-top: 94px;
+    padding-bottom: 94px;
     margin: 0 auto; 
 }
 .section-title{
@@ -265,6 +265,36 @@ color: var(--btn-text-color);
 .paragraph-title,
 .works{
     color: #212121;
+}
+.advantages .flex-element::before{
+    display: inline-flex;
+    content: '';
+    width: 270px;
+    height:120px ;
+    background-color: var(--background-color-secondary);
+    border-radius: 4px;
+
+    margin-bottom: 30px;
+}
+.icon-antenna::before{
+    background-image: url(../images/antenna.svg);
+    background-repeat: no-repeat;
+    background-position:center;
+}
+.icon-clock::before {
+    background-image: url(../images/clock.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.icon-diagram::before {
+    background-image: url(../images/diagram.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.icon-astronaut::before {
+    background-image: url(../images/astronaut.svg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .advantages .flex-element:not(:first-child){
     margin-left: 30px;
