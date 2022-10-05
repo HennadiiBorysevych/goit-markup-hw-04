@@ -46,8 +46,10 @@ body{
 .logo:hover, 
 .logo:focus, 
 .link:hover, 
-.link:focus {
+.link:focus,
+.icon-contact:hover {
     color: var(--accent-text-color) ;
+    fill: var(--accent-text-color);
 }
 .flex-box{
     display: flex;
@@ -96,6 +98,12 @@ body{
 .contacts .flex-element{
     padding: 32px 0;
 }
+.icon-contact{
+    width: 16px;
+    height: 12px;
+    margin-right: 5px;
+    fill: var(--primary-text-color);
+}
 
 .contacts .flex-element:not(:first-child){
     margin-left: 50px;
@@ -103,26 +111,6 @@ body{
 .contact-link{
     color: var(--primary-text-color);
 }
-.icon-mail::before{
-    display: inline-flex;
-    width: 16px;
-    height: 12px;
-    content: '';
-    background-image: url(../images/envelope.svg);
-    
-    margin-right: 10px;
-}
-.icon-phone::before{
-    display: inline-flex;
-    width: 10px;
-    height: 16px;
-    content: '';
-    background-image: url(../images/smartphone.svg);
-
-    margin-right: 10px;
-}
-
-
 .hero-title{
 color: var(--btn-text-color);
 
@@ -266,7 +254,17 @@ color: var(--btn-text-color);
 .works{
     color: #212121;
 }
-.advantages .flex-element::before{
+.icon{
+    width: 270px;
+    height: 120px;
+    background-position: center;
+    padding: 25px 100px;
+    margin-bottom: 30px;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+}
+
+/* .advantages .flex-element::before{
     display: inline-flex;
     content: '';
     width: 270px;
@@ -275,8 +273,8 @@ color: var(--btn-text-color);
     border-radius: 4px;
 
     margin-bottom: 30px;
-}
-.icon-antenna::before{
+} */
+/* .icon-antenna::before{
     background-image: url(../images/antenna.svg);
     background-repeat: no-repeat;
     background-position:center;
@@ -295,12 +293,9 @@ color: var(--btn-text-color);
     background-image: url(../images/astronaut.svg);
     background-repeat: no-repeat;
     background-position: center;
-}
+} */
 .advantages .flex-element:not(:first-child){
     margin-left: 30px;
-}
-.advantages{
-    padding-top: 54px;
 }
 .examples{
     display: flex;
@@ -352,10 +347,15 @@ color: var(--btn-text-color);
     width: 270px;
 }
 .back-color{
-    padding: 30px 30px;
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
     text-align: center;
     background-color: var(--btn-text-color);
 
+}
+.padding{
+    padding-top: 0;
 }
 .position{
     margin: 0;
@@ -386,6 +386,38 @@ color: var(--btn-text-color);
 .type{
     font-size: 16px;
     line-height: 1.87;
+}
+
+.social-links{
+    display: inline-flex;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 16px;
+    padding-bottom: 30px;
+    margin: 0;
+    background: var(--btn-text-color);
+}
+.social-link:not(:first-child){
+    margin-left: 10px;
+}
+.site{
+    width: 44px;
+    height: 44px;
+}
+.network{
+    display: flex;
+    align-items: center ;
+    width: 44px;
+    height: 44px;
+    padding: 12px;
+    fill:#afb1b8;
+}
+
+.network:hover{
+    background-color: var(--order-btn-active);
+    fill: var(--btn-text-color);
+
+    
 }
 .footer{
 
