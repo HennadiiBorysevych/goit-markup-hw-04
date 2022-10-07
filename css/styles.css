@@ -49,8 +49,7 @@ body{
 .logo:hover, 
 .logo:focus, 
 .link:hover, 
-.link:focus,
-.icon-contact:hover {
+.link:focus{
     color: var(--accent-text-color) ;
     fill: var(--accent-text-color);
 }
@@ -74,8 +73,9 @@ body{
 .site-nav .nav-link,
 .contacts .contact-link{
     text-decoration: none;
-display: flex;
+    display: flex;
     align-items: center;
+    fill: currentColor ;
 }
 .site-nav,
 .contacts{
@@ -95,7 +95,7 @@ display: flex;
 .icon-contact{
     width: 16px;
     height: 12px;
-    fill: var(--primary-text-color);
+
     margin-right: 5px;
 }
 
@@ -202,19 +202,22 @@ color: var(--btn-text-color);
     
 }
 .projects{
-    border: 1px solid #EEEEEE;
     width: calc((100% - 90px) / 3 );
     margin-top: var(--card-set-gap);
     margin-left: var(--card-set-gap);
 }
 .projects-link:hover{
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
+    0px 4px 4px rgba(0, 0, 0, 0.06), 
+    1px 4px 6px rgba(0, 0, 0, 0.16);
     cursor: pointer;
 }
 .projects-link{
     font-family: inherit;
     color: inherit;
     text-decoration: none;
+    display: block;
+
 
 }
 /* .work-list .flex-element:nth-child(3n){
@@ -391,12 +394,25 @@ color: var(--btn-text-color);
 
     background-color: var(--background-color-secondary);
 }
+.block{
+    display: block;
+}
 .work-type{
     padding: 20px 20px;
+    border-right-color: rgb(238, 238, 238);
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-bottom-color: rgb(238, 238, 238);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-color: rgb(238, 238, 238);
+    border-left-style: solid;
+    border-left-width: 1px;
 }
 .type{
     font-size: 16px;
     line-height: 1.87;
+    margin: 0;
 }
 
 .social-links{
