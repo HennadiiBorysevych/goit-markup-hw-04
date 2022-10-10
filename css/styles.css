@@ -92,13 +92,6 @@ body{
 .contacts .flex-element{
     padding: 32px 0;
 }
-.icon-contact{
-    width: 16px;
-    height: 12px;
-
-    margin-right: 5px;
-}
-
 .contacts .flex-element:not(:first-child){
     margin-left: 50px;
 }
